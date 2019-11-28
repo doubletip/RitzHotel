@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/prefixfree.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />  
@@ -88,77 +88,7 @@
         .review_img_txt h3{font-size: 40px; width: 70%; text-align: center;padding-left: 30%; color: #f9f9f9; text-shadow: 3px 3px 10px #897365;}
         .review_img_txt a{ width: 40%; background: #897365; margin: 0 auto; margin-top: 50px; line-height: 50px; color: #f9f9f9; font-weight: bold; letter-spacing: 1px; cursor: pointer; display: block; font-size: 16px;}
         
-        @media screen and (max-width:1390px) and (min-width: 1099px){
-            .review_list{margin-top: 10px;}
-            .review_txt h3{line-height: 60px;}
-            .review_txt h4{line-height: 50px}
-            .review_txt{padding-left: 2%; padding-top: 0%; padding-right: 1%;}
-        }
-         @media screen and (max-width:1100px){
-             .review_c1>div{width: 100%;}
-             .review_txt .review_txt1{width: 100%;}
-             .review_txt{padding-right: 5%;}
-        }
-    </style>
-    <script>
-         $(function() {      
-            $("#header").load("html/sub_header.html");
-            $("#footer").load("html/footer.html"); 
-
-        $(window).scroll(function(e){
-                e.preventDefault();
-                var i = 10;  
-                var st = $(window).scrollTop()+i;
-                $(".company_keytitle").css({top: st});
-                console.log($(window).scrollTop());
-            });  
-        });
-    </script>
-
-</head>
-
-<body>
-    <div id="wrap">
-       
-        <!-- 헤더구역    -->
-        <div id="header"></div>
-
-        <!-- 콘텐츠구역 -->
-        <div id="company_keyimage">
-            <div class="company_keytitle">
-                <div class="company_line"></div>
-                <h2 class="company_ment1">REVIEW</h2>
-                <p class="company_ment2">호텔리뷰</p>
-                <p class="company_ment3">HOME > GUIDE > REVIEW</p>
-            </div>
-        </div>
-        <div class="review_c1">
-           <div class="review_txt">
-          <h3>MEMBERSHIP</h3>
-           <p class="review_txt1">클럽 RITZ는 RITZHOTEL 전 지점에서 포인트 적립 및 멤버 전용 혜택을 누리실 수 있는 무료<br>멤버십입니다. 멤버 등급에 따라 객실 업그레이드, 체크아웃 시간 연장 등 다양한 특전이 제공됩니다.</p>
-           <h4>Points</h4>
-           <p class="review_txt2">전국 RITZHOTEL에서 예약한 객실 이용 금액의 3~5%를 포인트로 적립해 드립니다.<br> 1포인트는 현금 1원과 동일한 가치를 가지며 1만점 단위로 현금처럼 사용 가능합니다.<br> 포인트는 객실 이용 금액 결제 시 현금처럼 사용 가능합니다.<br> 누적이용 금액에 따라 멤버십 등급이 세 단계로 나뉘어지며 1년 단위로 등급이 조정됩니다.</p>
-           <ul class="review_list">
-               <li>식음 및 기타 부대시설 이용 금액/여행사 요금/단체 할인 요금/일부 특가상품/세금 및 봉사료는 적립 대상에서 제외됩니다.</li>
-               <li>미사용 포인트는 최초 발생일 기준 5년 이후 자동 소멸됩니다.</li>
-               <li>식음 업장 및 부대시설은 포인트 결제 대상에서 제외됩니다.</li>
-           </ul>
-            </div>
-            <div class="review_img">
-               <div class="review_img_txt">
-                   <h3>Exclusive privileges of CLUB RITZ</h3>               
-                   <a href="join.html">Join</a>
-               </div>
-                <img src="images/Guide/review_bg1.jpg" alt="">
-            </div>
-        </div>
-        
-        
-        
-        
-        
-        <style>
-section {position: relative; width: 100%; margin-top: 50px;}
+        section {position: relative; width: 100%; margin-top: 50px;}
 
 #help3 {position: relative; width: 100%; margin: 0 auto; max-width: 1600px;}
 	
@@ -194,11 +124,21 @@ section {position: relative; width: 100%; margin-top: 50px;}
 #help3 .page_num .next {display: inline-block; width: 36px; height: 35px; background: url(images/next.png); margin-right: 1%; position: relative; top: 10px; background-size: cover;}
 #help3 .page_num .back {display: inline-block; width: 36px; height: 35px; background: url(images/back.png); position: relative; top: 10px; background-size: cover;}
 .onClick{border: 1px solid black; font-weight: bold;}
-            .review_title{font-size: 24px; text-align: center; margin-top: 100px;}
-
-
-
-@media screen and (min-width:1200px) and (max-width:1399px){
+.review_title{font-size: 24px; text-align: center; margin-top: 100px;}
+        
+        @media screen and (max-width:1390px) and (min-width: 1099px){
+            .review_list{margin-top: 10px;}
+            .review_txt h3{line-height: 60px;}
+            .review_txt h4{line-height: 50px}
+            .review_txt{padding-left: 2%; padding-top: 0%; padding-right: 1%;}
+        }
+         @media screen and (max-width:1100px){
+             .review_c1>div{width: 100%;}
+             .review_txt .review_txt1{width: 100%;}
+             .review_txt{padding-right: 5%;}
+        }
+        
+        @media screen and (min-width:1200px) and (max-width:1399px){
     #help3 .news {width: 90%; margin: 0 auto;}
     #help3 .news thead {border-top: 3px solid black; border-bottom: 1px solid grey;}
 	#help3 .news thead tr td {font-weight: bold; font-size: 16px; padding-top: 1%; padding-bottom: 1%; padding-right: 1%; padding-left: 1%; text-align: center;}
@@ -211,7 +151,8 @@ section {position: relative; width: 100%; margin-top: 50px;}
 	#help3 .news tbody tr td.name {width: 70%; text-align: left; padding-left: 2%; border-bottom: 1px solid grey; font-size: 1.14px;}
 	#help3 .news tbody tr td.date {width: 15%; text-align: center; border-bottom: 1px solid grey; font-size: 1.14px;} 
 }
-@media screen and (min-width:800px) and (max-width:1199px){
+        
+        @media screen and (min-width:800px) and (max-width:1199px){
 
 	
 
@@ -252,7 +193,8 @@ section {position: relative; width: 100%; margin-top: 50px;}
 
 
 }
-@media all and (min-width:401px) and (max-width:800px){
+        
+        @media all and (min-width:401px) and (max-width:800px){
 
 	
 	#help3 .news {width: 100%; margin: 0 auto;}
@@ -291,11 +233,22 @@ section {position: relative; width: 100%; margin-top: 50px;}
     
     #help3 .page_num .back {display: inline-block; width: 25px; height: 24px; background: url(images/back.png); position: relative; top: 10px; background-size: cover;}
 	
-}
-    </style>    
-        <script>
-    $(function(){
-        var i=0;
+}  
+    </style>
+    <script>
+         $(function() {      
+            $("#header").load("html/sub_header.html");
+            $("#footer").load("html/footer.html"); 
+
+        $(window).scroll(function(e){
+                e.preventDefault();
+                var i = 10;  
+                var st = $(window).scrollTop()+i;
+                $(".company_keytitle").css({top: st});
+                console.log($(window).scrollTop());
+            }); 
+             
+             var i=0;
         $(".n1").show();
         $(".num_1").addClass("onClick");
         $(".num_2").removeClass("onClick");
@@ -525,9 +478,47 @@ section {position: relative; width: 100%; margin-top: 50px;}
             $(".n3").hide();
             $(".n4").hide();
         });
-    });
-        
+        });
     </script>
+
+</head>
+
+<body>
+    <div id="wrap">
+       
+        <!-- 헤더구역    -->
+        <div id="header"></div>
+
+        <!-- 콘텐츠구역 -->
+        <div id="company_keyimage">
+            <div class="company_keytitle">
+                <div class="company_line"></div>
+                <h2 class="company_ment1">REVIEW</h2>
+                <p class="company_ment2">호텔리뷰</p>
+                <p class="company_ment3">HOME > GUIDE > REVIEW</p>
+            </div>
+        </div>
+        <div class="review_c1">
+           <div class="review_txt">
+          <h3>MEMBERSHIP</h3>
+           <p class="review_txt1">클럽 RITZ는 RITZHOTEL 전 지점에서 포인트 적립 및 멤버 전용 혜택을 누리실 수 있는 무료<br>멤버십입니다. 멤버 등급에 따라 객실 업그레이드, 체크아웃 시간 연장 등 다양한 특전이 제공됩니다.</p>
+           <h4>Points</h4>
+           <p class="review_txt2">전국 RITZHOTEL에서 예약한 객실 이용 금액의 3~5%를 포인트로 적립해 드립니다.<br> 1포인트는 현금 1원과 동일한 가치를 가지며 1만점 단위로 현금처럼 사용 가능합니다.<br> 포인트는 객실 이용 금액 결제 시 현금처럼 사용 가능합니다.<br> 누적이용 금액에 따라 멤버십 등급이 세 단계로 나뉘어지며 1년 단위로 등급이 조정됩니다.</p>
+           <ul class="review_list">
+               <li>식음 및 기타 부대시설 이용 금액/여행사 요금/단체 할인 요금/일부 특가상품/세금 및 봉사료는 적립 대상에서 제외됩니다.</li>
+               <li>미사용 포인트는 최초 발생일 기준 5년 이후 자동 소멸됩니다.</li>
+               <li>식음 업장 및 부대시설은 포인트 결제 대상에서 제외됩니다.</li>
+           </ul>
+            </div>
+            <div class="review_img">
+               <div class="review_img_txt">
+                   <h3>Exclusive privileges of CLUB RITZ</h3>               
+                   <a href="join.html">Join</a>
+               </div>
+                <img src="images/Guide/review_bg1.jpg" alt="리뷰배경이미지">
+            </div>
+        </div>
+
        
         <div class="review_title">
     		    <h3>REVIEW</h3>
